@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>第5章反応　STEP1-中級問題</title>
+	<link rel = "stylesheet" href="website.css">
+</head>
+
+<body>
+	<div class = "title">
+	<h1 class = "daimei">プログラム復習コンテンツ</h1>
+	<div class="home"></div>
+	</div>
+
+	<h1 class = "daimei2">第5章反応　STEP1-中級問題</h1>
+
+	<div class = "yokonarabi">
+	<div class = "mondai">
+	<p class="midasi1">問題のコード</p>
+	<img src="5syou_1_tyuukyuu_mondai.png">
+	</div>
+
+	<div class = "gamen">
+	<p class="midasi2">プログラム実行画面</p>
+	<div class = "video">
+	<video controls muted autoplay loop src="5syou_1_tyuukyuu_kekka.mp4"></video>
+	</div>
+	</div>
+	</div>
+
+	<p class="midasi3">問題文</p>
+	<div class = "mondaibun">
+	<p>上図は,マウスを追跡して正方形が動くプログラムです.</p>
+	<p>(1)プログラムが動き始めたときに１回だけ実行されるように,プログラムを埋めてください.</p>
+	<p>(2)プログラムが止まるまで繰り返し実行されるように,プログラムを埋めてください.</p>
+	<p>(3)画面をリフレッシュするように,プログラムを埋めてください.ただし,白(255)で画面をリフレッシュすること.</p>
+	<p>(4)マウスのx座標とy座標を基準点に幅30高さ30の正方形を描くように,プログラムを埋めてください.</p>
+	
+	<input type="checkbox" id="check1">
+	<label class="check1" for="check1">ヒント</label>
+	<div class = "hinto">
+	<p>(3)繰り返し実行されるdraw()関数の中で背景(background)を入れると,画面がリフレッシュされる.</p>
+
+	</div>
+	</div>
+	
+	<p class="midasi4">解答欄</p>
+	<div class = "kaitouran">
+	<p>
+	<label>(1)<input type="text" id="one" size="80" placeholder="解答を入力"></label>
+	<p id = "text1"></p>
+	</p>
+
+
+	<p>
+	<label>(2)<input type="text" id="two" size="80" placeholder="解答を入力"</label>
+	<p id = "text2"></p>
+	</p>
+
+	<p>
+	<label>(3)<input type="text" id="three" size="80" placeholder="解答を入力"</label>
+	<p id = "text3"></p>
+	</p>
+
+	<p>
+	<label>(4)<input type="text" id="four" size="80" placeholder="解答を入力"</label>
+	<p id = "text4"></p>
+	</p>
+
+
+	<p>(1)void setup()</p>
+	<p>(2)void draw()</p>
+	<p>(3)background(255);</p>
+	<p>(4)rect(mouseX, mouseY, 30, 30);</p>
+	
+	<input type="button" id="btn" value="判定">
+	
+	
+	</div>
+	<script src = "main.js"></script>	
+</body>
+
+</html>
